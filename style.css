@@ -1,0 +1,114 @@
+/* General Styling for Header */
+header {
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  border-bottom: 2px solid #0a0505; /* Subtle border */
+}
+
+/* Name Styling */
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #333; /* Darker color for contrast */
+  font-weight: bold;
+}
+
+/* Navigation Links */
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  font-size: 1em;
+  margin: 0 15px;
+  text-decoration: none; /* Remove underline */
+  color: #000000; /* Blue color for links */
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #a2a1a1; /* Darker blue on hover */
+  text-decoration: none; /* Underline on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background */
+    color: #f5f5f5; /* Light text */
+    padding: 20px 15px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    border-top: 2px solid #555;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 15px;
+}
+
+/* Footer Links */
+footer a {
+    position: relative;
+    color: #007BFF; /* Blue links */
+    text-decoration: none; /* No underline */
+    font-weight: 500;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+/* Hover Effect: Color Change and Underline Animation */
+footer a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #007BFF; /* Blue underline */
+    transition: width 0.3s ease-in-out; /* Smooth underline animation */
+}
+
+footer a:hover {
+    color: #00d1ff; /* Lighter blue on hover */
+}
+
+footer a:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+/* Footer Credits */
+.footer-credits {
+    font-size: 0.9em;
+    color: #bbb; /* Subtle gray */
+}
+
+.footer-credits a {
+    position: relative;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-credits a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #007BFF;
+    transition: width 0.3s ease-in-out;
+}
+
+.footer-credits a:hover {
+    color: #00d1ff; /* Lighter blue on hover */
+}
+
+.footer-credits a:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
